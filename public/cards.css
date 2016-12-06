@@ -1,0 +1,29 @@
+body { font-family: helvetica }
+.card { border: 1px solid black; padding: 16px }
+.card {margin: 60px 100px }
+.card {position: relative }
+.card {height: 400px; }
+h2 { margin: 0px; }
+
+div.size {position: absolute; top: 16px; right: 16px; }
+div.size { padding: 4px; border: 1px solid black; }
+div.size {background: white; }
+div.size * { text-align: center; }
+div.tshirtsize {color: black; font-weight: bold; font-size: 60px }
+
+.keywords { margin: 10px 0px; }
+.keyword { background: black; padding: 4px 6px; margin-right: 4px; color: white}
+
+
+div.devtime {color: gray; font-weight: bold; font-size: 20px; }
+div.deadline {color: red; font-weight: bold; font-size: 20px }
+div.card { padding: 16px; }
+div.card {border: 1px solid black;}
+div.card { background:#cecece; }
+
+@media print  
+{
+    div.card{
+        page-break-inside: avoid;
+    }
+}

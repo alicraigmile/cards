@@ -1,0 +1,22 @@
+#!/usr/bin/env node
+
+var app = require('../lib/app'),
+    appName = require('../package').name,
+		morgan = require('morgan'),
+    logger = morgan('combined'),
+    http = require('http'),
+    server = http.createServer(app),
+    port = require('../config').port;
+
+app.set('port', port);
+app.use(logger);
+server.listen(port);
+
+server.on('listening', function () {
+    console.log(appName + ' started. See http://localhost:' + port + '/status');
+    console.log('^C to exit.');
+});
+
+server.on('error', function (e) {
+    console.log(e);
+});

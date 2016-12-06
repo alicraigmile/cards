@@ -1,0 +1,40 @@
+html(lang="en")
+  head
+    title= pageTitle
+    link(rel='stylesheet', href='/cards.css', type='text/css' )
+  body
+    h1 Cards
+    #container.col
+      for card in cards
+        .card
+          .top
+            .title
+              h2
+                = card.title
+            .keywords
+              for keyword in card.keywords
+                span.keyword
+                  = keyword
+            if card['harddeadline']
+              .deadline
+                = 'Deadline: '
+                = card['harddeadline']
+            if card['editorialpriority']
+              .priority
+                = 'Priority '
+                = card['editorialpriority']
+          .right
+            .how
+              p= card['howelevatorpitch']
+          .left
+            .why
+              h3 Why?
+              p= card['whysolveswhichproblem']
+          .bottom
+            .size
+              .tshirtsize
+                = card['t-shirtsize']
+              .devtime
+                = card['devtime']
+              .elapsedtime
+              = card['elapsedtime']

@@ -1,0 +1,20 @@
+{
+  "name": "candidates",
+  "version": "1.0.0",
+  "description": "Convert the Bitesize backlog candidates to Posters",
+  "scripts": {
+    "start": "node ./bin/cards",
+    "test": "mocha test/",
+    "postinstall": "node_modules/.bin/bower install"
+  },
+  "author": "Ali Craigmile <ali@craigmile.com> (http://ali.craigmile.com)",
+  "license": "ISC",
+  "dependencies": {
+    "bluebird": "^3.4.6",
+    "express": "^4.14.0",
+    "google-spreadsheet": "^2.0.3",
+    "morgan": "^1.7.0",
+    "pug": "^0.1.0",
+    "underscore": "^1.8.3"
+  }
+}
