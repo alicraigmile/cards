@@ -3,7 +3,6 @@ html(lang="en")
     title= pageTitle
     link(rel='stylesheet', href='/cards.css', type='text/css' )
   body
-    h1 Cards
     #container.col
       for card in cards
         .card
@@ -25,11 +24,18 @@ html(lang="en")
                 = card['editorialpriority']
           .right
             .how
-              p= card['howelevatorpitch']
+              h3 How?
+              ul
+              for how in card.howlist
+                li
+                  = how
           .left
             .why
               h3 Why?
               p= card['whysolveswhichproblem']
+            .notes
+              h3 Notes
+              p= card['notes']
           .bottom
             .size
               .tshirtsize

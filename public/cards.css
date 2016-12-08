@@ -1,6 +1,6 @@
 body { font-family: helvetica }
 .card { border: 1px solid black; padding: 16px }
-.card {margin: 60px 100px }
+.card {margin: 60px 60px }
 .card {position: relative }
 .card {height: 400px; }
 h2 { margin: 0px; }
