@@ -14,14 +14,19 @@ html(lang="en")
               for keyword in card.keywords
                 span.keyword
                   = keyword
+              if card.dots
+                - var i = 0;
+                while i < card.dots
+                  - i++;
+                  span.dot 
             if card['harddeadline']
               .deadline
                 = 'Deadline: '
                 = card['harddeadline']
-            if card['editorialpriority']
+            if card['priority']
               .priority
                 = 'Priority '
-                = card['editorialpriority']
+                = card['priority']
           .right
             .how
               h3 How?
@@ -33,9 +38,10 @@ html(lang="en")
             .why
               h3 Why?
               p= card['whysolveswhichproblem']
-            .notes
-              h3 Notes
-              p= card['notes']
+            if card.notes
+              .notes
+                h3 Notes
+                p= card.notes
           .bottom
             .size
               .tshirtsize
