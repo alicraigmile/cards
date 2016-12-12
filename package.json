@@ -4,8 +4,7 @@
   "description": "Convert the Bitesize backlog candidates to Posters",
   "scripts": {
     "start": "node ./bin/cards",
-    "test": "mocha test/",
-    "prestart": "bower install"
+    "test": "mocha test/"
   },
   "author": "Ali Craigmile <ali@craigmile.com> (http://ali.craigmile.com)",
   "license": "ISC",
