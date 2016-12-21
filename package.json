@@ -1,7 +1,7 @@
 {
-  "name": "candidates",
+  "name": "cards",
   "version": "1.0.0",
-  "description": "Convert the Bitesize backlog candidates to Posters",
+  "description": "Convert a spreadsheet of backlog candidates into cards or posters",
   "scripts": {
     "start": "node ./bin/cards",
     "test": "mocha test/"
