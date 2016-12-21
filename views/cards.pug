@@ -4,13 +4,20 @@ html(lang="en")
     link(rel='stylesheet', href='/css/cards.css', type='text/css' )
   body
     #container.col
+      if index
+        a(href='/spreadsheets/'+spreadsheetId)
+          | < More cards from this spreadsheet
       for card in cards
         - var enabled = (card.priority == 'W') ? 'disabled' :  'enabled';
         .card(class=enabled)
           .top
             .title
               h2
-                = card.title
+                if ! index
+                  a(href='/spreadsheets/'+spreadsheetId + '/' + card.index)
+                    = card.title
+                else
+                  = card.title
             .keywords
               for keyword in card.keywords
                 span.keyword
