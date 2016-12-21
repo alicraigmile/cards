@@ -4,10 +4,11 @@ body { font-family: helvetica }
 .card {position: relative }
 .card {height: 400px; }
 h2 { margin: 0px; }
+.disabled  h2 {  text-decoration: line-through;}
 
 div.size {position: absolute; top: 16px; right: 16px; }
 div.size { padding: 4px; border: 1px solid black; }
-div.size {background: white; }
+div.size {background: rgba(255,255,255,0.8); }
 div.size * { text-align: center; }
 div.tshirtsize {color: black; font-weight: bold; font-size: 60px }
 
