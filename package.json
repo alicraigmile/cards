@@ -1,7 +1,7 @@
 {
   "name": "cards",
   "version": "1.0.0",
-  "description": "Convert a spreadsheet of backlog candidates into cards or posters",
+  "description": "Print agile cards from data in a google streadsheet",
   "scripts": {
     "start": "node ./bin/cards",
     "test": "mocha test/"
