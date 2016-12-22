@@ -1,6 +1,6 @@
 {
   "name": "cards",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Print agile cards from data in a google streadsheet",
   "scripts": {
     "start": "node ./bin/cards",
