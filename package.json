@@ -1,7 +1,7 @@
 {
   "name": "cards",
-  "version": "1.0.3",
-  "description": "Print agile cards from data in a google streadsheet",
+  "version": "1.0.4",
+  "description": "Print agile cards from data in a google spreadsheet",
   "scripts": {
     "start": "node ./bin/cards",
     "test": "mocha test/"
@@ -10,10 +10,13 @@
   "license": "ISC",
   "dependencies": {
     "bluebird": "^3.4.6",
+    "chai": "^3.5.0",
     "express": "^4.14.0",
     "google-spreadsheet": "^2.0.3",
+    "mocha": "^3.2.0",
     "morgan": "^1.7.0",
     "pug": "^0.1.0",
+    "supertest": "^2.0.1",
     "underscore": "^1.8.3"
   }
 }
